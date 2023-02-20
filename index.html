@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Submission</title>
+  </head>
+
+  <body>
+    <form class="book-form">
+      <div class="bs-image">
+        <img src="./image/main.png">
+      </div>
+      <div class="bs-form">
+        <div class="bs-form-title">
+          <h4>Book Data Form</h4>
+        </div>
+        <input type="text" class="title" name="title" placeholder="Book Title">
+        <br>
+        <input type="text" class="author" name="author" placeholder="Author Name">
+        <br>
+        <input type="number" class="year" name="year" placeholder="Year Published">
+        <br>
+        <div id='checkbox-container'>
+          <input type="checkbox" name="done" class="checkbox">
+          <label for="checkbox">Read</label>
+        </div>
+        <div class="button-add-container">
+          <button class="add" role="button"><span class="text">Submit</span></button>
+        </div>
+      </div>
+    </form>
+
+    <form class="search-box">
+      <input type="text" name="search" id="search" class="search-item" placeholder="Search book by title...">
+      <button type="submit" class="search-button" role="button"><i class="fas fa-search"></i></button>
+    </form>
+
+    <div class="data-storage-container">
+      <div class="uncompleted-list">
+        <div class="header-items">
+          <h5>Uncompleted items</h5>
+        </div>
+        <div class="book-items-uncompleted">
+        </div>
+        <div class="footer-items">
+          <p class="footer-title">&#128528;</p>
+        </div>
+      </div>
+
+      <div class="completed-list">
+        <div class="header-items">
+          <h5>Completed items</h5>
+        </div>
+        <div class="book-items-completed">
+        </div>
+        <div class="footer-items">
+          <p class="footer-title">&#128526;</p>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <script src="./js/data.js"></script>
+    <script src="./js/dom.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+
+</html>
